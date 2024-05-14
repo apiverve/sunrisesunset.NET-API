@@ -1,21 +1,65 @@
 using System;
 using System.Collections.Generic;
-using System.Text;
+using Newtonsoft.Json;
 
 namespace APIVerve
 {
-    using Newtonsoft.Json;
+public class data
+{
+    [JsonProperty("solarNoon")]
+    public DateTime solarNoon { get; set; }
+
+    [JsonProperty("nadir")]
+    public DateTime nadir { get; set; }
+
+    [JsonProperty("sunrise")]
+    public DateTime sunrise { get; set; }
+
+    [JsonProperty("sunset")]
+    public DateTime sunset { get; set; }
+
+    [JsonProperty("sunriseEnd")]
+    public DateTime sunriseEnd { get; set; }
+
+    [JsonProperty("sunsetStart")]
+    public DateTime sunsetStart { get; set; }
+
+    [JsonProperty("dawn")]
+    public DateTime dawn { get; set; }
+
+    [JsonProperty("dusk")]
+    public DateTime dusk { get; set; }
+
+    [JsonProperty("nauticalDawn")]
+    public DateTime nauticalDawn { get; set; }
+
+    [JsonProperty("nauticalDusk")]
+    public DateTime nauticalDusk { get; set; }
+
+    [JsonProperty("nightEnd")]
+    public DateTime nightEnd { get; set; }
+
+    [JsonProperty("night")]
+    public DateTime night { get; set; }
+
+    [JsonProperty("goldenHourEnd")]
+    public DateTime goldenHourEnd { get; set; }
+
+    [JsonProperty("goldenHour")]
+    public DateTime goldenHour { get; set; }
+
+}
 
 public class ResponseObj
 {
     [JsonProperty("status")]
-    public string Status { get; set; }
+    public string status { get; set; }
 
     [JsonProperty("error")]
-    public string Error { get; set; }
+    public object error { get; set; }
 
     [JsonProperty("data")]
-    public object Data { get; set; }
+    public data data { get; set; }
 
 }
 
