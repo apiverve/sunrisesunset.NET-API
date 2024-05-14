@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.SunriseSunset</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/sunrisesunset</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Sunrise Sunset is a simple tool for getting the sunrise and sunset times. It returns the sunrise and sunset times for a given location and date.</Description>
+    <RepositoryUrl>https://github.com/apiverve/sunrisesunset-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>sunrise sunset; sunrise sunset api; sunrise sunset tool; sunrise sunset software; sunrise sunset service; sunrise sunset library; sunrise sunset sdk; sunrise sunset code; sunrise sunset script; sunrise sunset program; sunrise sunset application; sunrise sunset app; sunrise sunset utility; sunrise sunset helper; sunrise sunset helper tool; sunrise sunset helper software; sunrise sunset helper service; sunrise sunset helper library; sunrise sunset helper sdk; sunrise sunset helper code; sunrise sunset helper script; sunrise sunset helper program; sunrise sunset helper application; sunrise sunset helper app; sunrise sunset helper utility; sunrise sunset helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
