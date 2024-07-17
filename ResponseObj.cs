@@ -9,9 +9,6 @@ public class data
     [JsonProperty("solarNoon")]
     public DateTime solarNoon { get; set; }
 
-    [JsonProperty("nadir")]
-    public DateTime nadir { get; set; }
-
     [JsonProperty("sunrise")]
     public DateTime sunrise { get; set; }
 
