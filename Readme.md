@@ -73,7 +73,7 @@ Using the API client, you can perform requests to the API.
 var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "09-21-2024"
+  date = "01-17-2025"
 };
 ```
 
