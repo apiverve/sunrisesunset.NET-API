@@ -32,9 +32,9 @@ From within Visual Studio:
 
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
-3. Click on Manage NuGet Packages...
+3. Click on Manage NuGet Packages..
 4. Click on the Browse tab and search for "APIVerve.API.SunriseSunset".
-5. Click on the APIVerve.API.SunriseSunset package, select the appropriate version in the right-tab and click Install.
+5. Click on the APIVerve.API.SunriseSunset package, click Install.
 
 
 ---
@@ -73,7 +73,7 @@ Using the API client, you can perform requests to the API.
 var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "02-03-2025"
+  date = "02-21-2025"
 };
 ```
 
@@ -96,19 +96,19 @@ if(response.error != null) {
   "status": "ok",
   "error": null,
   "data": {
-    "solarNoon": "2024-09-01T12:19:07.959Z",
-    "sunrise": "2024-09-01T05:50:23.51Z",
-    "sunset": "2024-09-01T18:47:52.407Z",
-    "sunriseEnd": "2024-09-01T05:53:05.874Z",
-    "sunsetStart": "2024-09-01T18:45:10.043Z",
-    "dawn": "2024-09-01T05:23:56.584Z",
-    "dusk": "2024-09-01T19:14:19.333Z",
-    "nauticalDawn": "2024-09-01T04:52:34.262Z",
-    "nauticalDusk": "2024-09-01T19:45:41.655Z",
-    "nightEnd": "2024-09-01T04:20:08.217Z",
-    "night": "2024-09-01T20:18:07.7Z",
-    "goldenHourEnd": "2024-09-01T06:24:51.482Z",
-    "goldenHour": "2024-09-01T18:13:24.435Z"
+    "solarNoon": "2025-02-20T12:32:53.132Z",
+    "sunrise": "2025-02-20T07:01:34.082Z",
+    "sunset": "2025-02-20T18:04:12.182Z",
+    "sunriseEnd": "2025-02-20T07:04:17.987Z",
+    "sunsetStart": "2025-02-20T18:01:28.278Z",
+    "dawn": "2025-02-20T06:35:17.568Z",
+    "dusk": "2025-02-20T18:30:28.696Z",
+    "nauticalDawn": "2025-02-20T06:05:07.51Z",
+    "nauticalDusk": "2025-02-20T19:00:38.754Z",
+    "nightEnd": "2025-02-20T05:35:08.859Z",
+    "night": "2025-02-20T19:30:37.405Z",
+    "goldenHourEnd": "2025-02-20T07:36:59.509Z",
+    "goldenHour": "2025-02-20T17:28:46.756Z"
   },
   "code": 200
 }
@@ -136,7 +136,7 @@ All usage of the APIVerve website, API, and services is subject to the [APIVerve
 ## License
 Licensed under the The MIT License (MIT)
 
-Copyright (&copy;) 2024 APIVerve, and Evlar LLC
+Copyright (&copy;) 2025 APIVerve, and EvlarSoft LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
