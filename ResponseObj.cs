@@ -4,63 +4,64 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class data
-{
-    [JsonProperty("solarNoon")]
-    public DateTime solarNoon { get; set; }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("solarNoon")]
+        public string SolarNoon { get; set; }
 
-    [JsonProperty("sunrise")]
-    public DateTime sunrise { get; set; }
+        [JsonProperty("sunrise")]
+        public string Sunrise { get; set; }
 
-    [JsonProperty("sunset")]
-    public DateTime sunset { get; set; }
+        [JsonProperty("sunset")]
+        public string Sunset { get; set; }
 
-    [JsonProperty("sunriseEnd")]
-    public DateTime sunriseEnd { get; set; }
+        [JsonProperty("sunriseEnd")]
+        public string SunriseEnd { get; set; }
 
-    [JsonProperty("sunsetStart")]
-    public DateTime sunsetStart { get; set; }
+        [JsonProperty("sunsetStart")]
+        public string SunsetStart { get; set; }
 
-    [JsonProperty("dawn")]
-    public DateTime dawn { get; set; }
+        [JsonProperty("dawn")]
+        public string Dawn { get; set; }
 
-    [JsonProperty("dusk")]
-    public DateTime dusk { get; set; }
+        [JsonProperty("dusk")]
+        public string Dusk { get; set; }
 
-    [JsonProperty("nauticalDawn")]
-    public DateTime nauticalDawn { get; set; }
+        [JsonProperty("nauticalDawn")]
+        public string NauticalDawn { get; set; }
 
-    [JsonProperty("nauticalDusk")]
-    public DateTime nauticalDusk { get; set; }
+        [JsonProperty("nauticalDusk")]
+        public string NauticalDusk { get; set; }
 
-    [JsonProperty("nightEnd")]
-    public DateTime nightEnd { get; set; }
+        [JsonProperty("nightEnd")]
+        public string NightEnd { get; set; }
 
-    [JsonProperty("night")]
-    public DateTime night { get; set; }
+        [JsonProperty("night")]
+        public string Night { get; set; }
 
-    [JsonProperty("goldenHourEnd")]
-    public DateTime goldenHourEnd { get; set; }
+        [JsonProperty("goldenHourEnd")]
+        public string GoldenHourEnd { get; set; }
 
-    [JsonProperty("goldenHour")]
-    public DateTime goldenHour { get; set; }
+        [JsonProperty("goldenHour")]
+        public string GoldenHour { get; set; }
 
-}
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-    [JsonProperty("error")]
-    public object error { get; set; }
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }
