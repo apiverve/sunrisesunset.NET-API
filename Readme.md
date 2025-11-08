@@ -63,7 +63,7 @@ class Program
         var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
         // Make the API call
@@ -129,7 +129,7 @@ public class Example
         var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
@@ -163,7 +163,7 @@ public class Example
         var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
         var response = apiClient.Execute(queryOptions);
@@ -202,7 +202,7 @@ public class Example
         var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
         try
@@ -260,7 +260,7 @@ public class Example
         var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
         try
@@ -303,7 +303,7 @@ apiClient.AddCustomHeader("X-Request-ID", Guid.NewGuid().ToString());
 var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -331,7 +331,7 @@ apiClient.SetLogger(message =>
 var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -351,7 +351,7 @@ apiClient.SetRetryDelay(1500);        // Wait 1.5 seconds between retries (defau
 var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
 
 var response = await apiClient.ExecuteAsync(queryOptions);
@@ -367,7 +367,7 @@ using (var apiClient = new SunriseSunsetAPIClient("[YOUR_API_KEY]"))
     var queryOptions = new SunriseSunsetQueryOptions {
   lat = 36.7201600,
   lon = -4.4203400,
-  date = "11-07-2025"
+  date = "11-08-2025"
 };
     var response = await apiClient.ExecuteAsync(queryOptions);
     Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(response, Newtonsoft.Json.Formatting.Indented));
